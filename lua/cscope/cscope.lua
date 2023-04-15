@@ -296,7 +296,7 @@ M.setup = function(opts)
 	-- This variable can be used by other plugins to change db_file
 	-- e.g. vim-gutentags can use it for when
 	--	vim.g.gutentags_cache_dir is enabled.
-	vim.g.cscope_maps_db_file = nil
+	vim.g.cscope_maps_db_file = "./cscope.out"
 
 	cscope_picker = require("cscope.pickers." .. M.opts.picker)
 
